@@ -19,7 +19,7 @@ class mathOperation{
 	
 	//function to return division
 	public static float division(float num1, float num2){
-		if(num2 != 0){
+		if(num2 != 0){  // check for divide by zero errror
 			return (num1/num2);
 		}
 		else{
@@ -29,22 +29,22 @@ class mathOperation{
 	}
 
 	public static void main(String[] args) {
-		float num1, num2;
+		float num1, num2;         // variable declaration
 		Scanner c=new Scanner(System.in);
 		System.out.print(" Enter Number 1: ");
-		num1 = c.nextInt();
+		num1 = c.nextInt(); //input 1st number num1
 
 		System.out.print(" Enter Number 2: ");
-		num2 = c.nextInt();
+		num2 = c.nextInt(); //input 2nd number num2
 
-		float add = addition(num1, num2);
-		float sum = summation( num1, num2);
-		float mul = multiplication( num1, num2);
-		float div = division( num1, num2);
+		float add = addition(num1, num2);        //call for addition function
+		float sum = summation( num1, num2);	 //call for summation function
+		float mul = multiplication( num1, num2); //call for multiplication function
+		float div = division( num1, num2);       //call for division function
 
-		System.out.println(" Addition is      : "+add);
-		System.out.println(" Subtraction is   : "+sum);
-		System.out.println(" Multiplication is: "+mul);
-		System.out.println(" Division is      : "+div);
+		System.out.println(" Addition is      : "+add); //Print Addition
+		System.out.println(" Subtraction is   : "+sum); //Print Subtraction
+		System.out.println(" Multiplication is: "+mul); //Print Multilpication
+		System.out.println(" Division is      : "+div); //Print Division
 	}
 };
