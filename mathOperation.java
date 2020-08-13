@@ -1,17 +1,23 @@
 import java.util.Scanner;
+//declaration main class
 class mathOperation{
+	
+	//function to return addition
 	public static float addition(float num1, float num2){
 		return (num1 + num2);
 	}
-
+	
+	//function to return summation
 	public static float summation(float num1, float num2){
 		return (num1 - num2);
 	}
-
+	
+	//function to return multiplication
 	public static float multiplication(float num1, float num2){
 		return (num1 * num1) ;
 	}
-
+	
+	//function to return division
 	public static float division(float num1, float num2){
 		if(num2 != 0){
 			return (num1/num2);
